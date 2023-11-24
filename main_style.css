@@ -1,85 +1,47 @@
-@media only screen and (max-width: 600px) {
-    .image_size img {
-        width: 70%;
-        display:block; 
-        margin:auto;
-    }
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Glint of the shaders</title>
 
-    .button_style_in {
-        position: fixed;
-        bottom: 10%;
-        float: right;
-        width: 18%;
-        margin-left: 60%;
-        padding: 10px;
-        border-radius: 0.7rem;
-        background-color: rgb(16, 26, 57);
-        text-align: center;
-        font-size: 1.0rem;
-        font-family: 'Courier New', Courier, monospace;
-    }
+        <link href = "main_style.css" rel = "stylesheet">
+    </head>
 
-    .Pline {
-        margin: 7% 15% 7% 15%;
-        padding: 0;
-        width: 10%;
-        height: 5px;
-        background-color: rgb(16, 26, 57);
-    }
+    <body class = "" style = "background-image: url(img/image2.jpg);">
+        <dev>
+            <dev class = "">
+                <p class = "Pline"></p>
+            </dev>
 
-    p {
-        margin: 5px 15% 5px 15%;
-        padding: 0.3rem;
-        font-size: 1.3rem;
-    }
-}
+            <dev class = "image_size">
 
-@media only screen and (min-width: 600px) {
-    .image_size img {
-        width: 50%;
-        display:block; 
-        margin:auto;
-    }
-    .button_style_in {
-        /* position: fixed;
-        bottom: 10%; */
-        float: right;
-        width: 15%;
-        /* margin-left: 60%; */
-        padding: 10px;
-        border-radius: 0.7rem;
-        background-color: rgb(16, 26, 57);
-        text-align: center;
-        font-size: 1.1rem;
-        font-family: 'Courier New', Courier, monospace;
-    }
+                <img src="img/image.png" />
+            </dev>
 
-    .Pline {
-        margin: 7% 25% 7% 25%;
-        padding: 0;
-        width: 10%;
-        height: 5px;
-        background-color: rgb(16, 26, 57);
-    }
+            <dev class = "text_class">
+                <p>
+                    讓月光為陰影上色
+                </p>
 
-    p {
-        margin: 5px 25% 5px 25%;
-        padding: 0.3rem;
-        font-size: 1.3rem;
-    }
-}
+                <p>
+                    探索名為愛的漩渦
+                </p>
 
-.back {
-    padding: 0% 10% 0% 10%;
-}
+                <p>
+                    如果有天，你能夠體驗另一個人的愛情故事，你會做出什麼選擇
+                </p>
+            </dev>
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
-.text_class {
-    margin: 10px 60px 10px 60px;
-}
-
-
+            <dev class = "button_style2">
+                <p class = "button_style_in">
+                    <a href = "glint_of_the_shaders2.html">
+                        開始閱讀
+                        <br>
+                        start
+                    </a>
+                </p>
+            </dev>
+        </dev>
+        
+        
+    </body>
+</html>
