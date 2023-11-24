@@ -1,47 +1,146 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Glint of the shaders</title>
+@media only screen and (Max-width: 1920px) {
+    .back {
+        padding: 3% 35% 3% 35%;
+    }
+}
 
-        <link href = "main_style.css" rel = "stylesheet">
-    </head>
+@media only screen and (max-width: 1280px) {
+    .back {
+        padding: 5% 30% 5% 30%;
+    }
+}
 
-    <body class = "" style = "background-image: url(img/image2.jpg);">
-        <dev>
-            <dev class = "">
-                <p class = "Pline"></p>
-            </dev>
+@media only screen and (max-width: 800px) {
+    .back {
+        padding: 5% 25% 5% 25%;
+    }
+}
 
-            <dev class = "image_size">
+@media only screen and (max-width: 600px) {
+    .back {
+        padding: 5px 15% 5px 15%;
+    }
+}
 
-                <img src="img/image.png" />
-            </dev>
+@media only screen and (Max-width: 1920px) {
+    .image_size img {
+        width: 30%;
+    }
 
-            <dev class = "text_class">
-                <p>
-                    讓月光為陰影上色
-                </p>
+    .button_style_in {
+        bottom: 10%;
+        width: 10%;
+        margin-left: 53%;
+    }
 
-                <p>
-                    探索名為愛的漩渦
-                </p>
+    .Pline {
+        margin: 3% 35% 3% 35%;
+    }
 
-                <p>
-                    如果有天，你能夠體驗另一個人的愛情故事，你會做出什麼選擇
-                </p>
-            </dev>
+    p {
+        margin: 5px 35% 5px 35%;
+    }
+}
 
-            <dev class = "button_style2">
-                <p class = "button_style_in">
-                    <a href = "glint_of_the_shaders2.html">
-                        開始閱讀
-                        <br>
-                        start
-                    </a>
-                </p>
-            </dev>
-        </dev>
-        
-        
-    </body>
-</html>
+@media only screen and (max-width: 1280px) {
+    .image_size img {
+        width: 40%;
+    }
+
+    .button_style_in {
+        bottom: 10%;
+        width: 12%;
+        margin-left: 55%;
+    }
+
+    .Pline {
+        margin: 5% 30% 5% 30%;
+    }
+
+    p {
+        margin: 5px 30% 5px 30%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .image_size img {
+        width: 50%;
+    }
+
+    .button_style_in {
+        bottom: 10%;
+        width: 15%;
+        margin-left: 56%;
+    }
+
+    .Pline {
+        margin: 5% 25% 5% 25%;
+    }
+
+    p {
+        margin: 5px 25% 5px 25%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .image_size img {
+        width: 70%;
+    }
+
+    .button_style_in {
+        bottom: 10%;
+        width: 18%;
+        margin-left: 60%;
+    }
+
+    .Pline {
+        margin: 7% 15% 7% 15%;
+    }
+
+    p {
+        margin: 5px 15% 5px 15%;
+    }
+}
+
+/* auto size */
+.image_size img {
+    display:block; 
+    margin:auto;
+}
+.button_style_in {
+    position: fixed;
+    float: right;
+    padding: 10px;
+    border-radius: 0.7rem;
+    background-color: rgb(16, 26, 57);
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Pline {
+    padding: 0;
+    width: 10%;
+    height: 5px;
+    background-color: rgb(16, 26, 57);
+}
+
+p {
+    padding: 0.3rem;
+    font-size: 1.3rem;
+}
+
+/* auto size */
+
+.back {
+    padding: 0% 10% 0% 10%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.text_class {
+    margin: 10px 60px 10px 60px;
+}
