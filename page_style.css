@@ -112,6 +112,7 @@
 
     100% {
         color: transparent;
+        display: none;
     }
 }
 
