@@ -113,7 +113,7 @@
     100% {
         color: transparent;
         display: none;
-        z-index: 0;
+        z-index: -1;
     }
 }
 
@@ -125,7 +125,7 @@
     to {
         background-color: transparent;
         display: none;
-        z-index: 0;
+        z-index: -1;
     }
 }
 
