@@ -113,18 +113,19 @@
     100% {
         color: transparent;
         display: none;
+        z-index: 0;
     }
 }
 
 @keyframes text_animation {
     from {
         background-color: rgb(37, 37, 117);
-        display: flex;
     }
 
     to {
         background-color: transparent;
         display: none;
+        z-index: 0;
     }
 }
 
