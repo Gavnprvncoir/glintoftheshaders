@@ -71,3 +71,26 @@ body {
 
     width: 100%;
 }
+
+
+/* animation */
+
+/* 
+.move_picture {
+    position: relative;
+    right: -100%;
+    animation-duration: 1s;
+    animation-name: move_left;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move_left {
+    form {
+        right: -100%;
+    }
+
+    to {
+        right: 0%;
+    }
+} */

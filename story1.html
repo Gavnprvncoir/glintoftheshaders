@@ -4,6 +4,10 @@
         <title>故事一</title>
 
         <link href = "story_style.css" rel = "stylesheet"/>
+
+        <!-- aos -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     </head>
 
     <body class = "back" style = "background-image: url(img/image2.jpg);">
@@ -16,10 +20,24 @@
         </div>
 
         <div class = "story_back">
+            <img src = "story1/story12-01.png">
+
+            <div>
+                <img data-aos="fade-up-left" src = "story1/story12-01-1.png">
+            </div>
+
+            <div style = "margin-top: 30%;margin-bottom: 30%;">
+                <img data-aos="zoom-in" src = "story1/story12-01-2.png">
+            </div>
+
             <img src = "story1/story12-02.png">
         </div>
                     
 
-
+        <script>
+            AOS.init({
+                duration: 1000,
+            });
+        </script>
     </body>
 </html>
