@@ -1,10 +1,16 @@
 @media only screen and (Max-width: 1920px) {
     .back {
-        padding: 3% 35% 3% 35%;
+        padding: 5px 5% 5px 5%;
     }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (Min-width: 1920px) {
+    .back {
+        padding: 5px 5% 5px 5%;
+    }
+}
+
+/* @media only screen and (max-width: 1280px) {
     .back {
         padding: 5% 25% 5% 25%;
     }
@@ -20,7 +26,7 @@
     .back {
         padding: 5px 10% 5px 10%;
     }
-}
+} */
 
 
 a {
@@ -31,6 +37,12 @@ a {
 }
 
 
+.img_style img {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 40%;
+}
 
 
 
@@ -47,25 +59,15 @@ body {
     padding: 0;
 }
 
-nav {
-    margin: 0;
-    padding: 15px;
-}
 
-nav li:hover {
-    background-color: rgb(201, 201, 201);
-}
 
-nav li {
-    padding: 5px 10px 5px 10px;
-}
 
-nav ul {
-    list-style: none;
-    height: 90px;
-    margin: 0;
-    padding: 10px;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
+/* story */
+
+.story_back {
+    position: absolute;
+    left: 0;
+    top: 15%;
+
+    width: 100%;
 }

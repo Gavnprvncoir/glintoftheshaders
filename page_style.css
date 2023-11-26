@@ -1,10 +1,17 @@
 @media only screen and (Max-width: 1920px) {
     .back {
-        padding: 3% 35% 3% 35%;
+        padding: 5px 5% 5px 5%;
     }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (Min-width: 1920px) {
+    .back {
+        padding: 5px 5% 5px 5%;
+    }
+}
+
+
+/* @media only screen and (max-width: 1280px) {
     .back {
         padding: 5% 25% 5% 25%;
     }
@@ -20,20 +27,27 @@
     .back {
         padding: 5px 10% 5px 10%;
     }
-}
+} */
+
+
+
 
 /* story */
 
 .story {
+    position: absolute;
+    top: 35%;
+    width: 90%;
+
     display: flex;
     justify-content: space-evenly;
 }
 
 .story_style{
-    padding: 30% 3% 30% 4%;
-    border-radius: 30px;
+    padding: 30% 4% 30% 4%;
+    border-radius: 1000px;
     width: 10%;
-    font-size: 1.7rem;
+    font-size: 3rem;
     text-align: center;
     background-color: rgb(16, 26, 57);
     color: white;
@@ -50,6 +64,20 @@ a {
 
 
 
+.text_style {    
+    position: absolute;
+    top: 25%;
+
+    width: 90%;
+}
+
+.text_style p {
+    text-align: center;
+    margin: auto 0% auto 0%;
+    font-size: 2.5rem;
+}
+
+
 
 .button_style2 {
     background-color: wheat;
@@ -64,25 +92,12 @@ body {
     padding: 0;
 }
 
-nav {
-    margin: 0;
-    padding: 15px;
-}
 
-nav li:hover {
-    background-color: rgb(201, 201, 201);
-}
 
-nav li {
-    padding: 5px 10px 5px 10px;
-}
 
-nav ul {
-    list-style: none;
-    height: 90px;
-    margin: 0;
-    padding: 10px;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
+.img_style img {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 40%;
 }

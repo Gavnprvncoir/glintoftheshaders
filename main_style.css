@@ -1,28 +1,55 @@
 @media only screen and (Max-width: 1920px) {
     .back {
+        padding: 5px 5% 5px 5%;
+    }
+
+    .image_size img {
+        width: 80%;
+    }
+
+    .button_style_in {
+        bottom: 10%;
+        width: 24%;
+    }
+
+    .Pline {
+        margin: 7% 0% 7% 0%;
+    }
+
+    p {
+        margin: 5px 0% 5px 0%;
+    }
+}
+
+@media only screen and (Min-width: 1920px) {
+    .back {
+        padding: 5px 5% 5px 5%;
+    }
+
+    .image_size img {
+        width: 80%;
+    }
+
+    .button_style_in {
+        bottom: 10%;
+        width: 18%;
+        margin-left: 60%;
+    }
+
+    .Pline {
+        margin: 7% 0% 7% 0%;
+    }
+
+    p {
+        margin: 5px 0% 5px 0%;
+    }
+}
+
+/* @media only screen and (Max-width: 1920px) {
+    .back {
         padding: 3% 35% 3% 35%;
     }
-}
 
-@media only screen and (max-width: 1280px) {
-    .back {
-        padding: 5% 30% 5% 30%;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .back {
-        padding: 5% 25% 5% 25%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .back {
-        padding: 5px 15% 5px 15%;
-    }
-}
-
-@media only screen and (Max-width: 1920px) {
     .image_size img {
         width: 30%;
     }
@@ -43,6 +70,10 @@
 }
 
 @media only screen and (max-width: 1280px) {
+    .back {
+        padding: 5% 30% 5% 30%;
+    }
+
     .image_size img {
         width: 40%;
     }
@@ -62,29 +93,13 @@
     }
 }
 
-@media only screen and (max-width: 800px) {
-    .image_size img {
-        width: 50%;
-    }
-
-    .button_style_in {
-        bottom: 10%;
-        width: 15%;
-        margin-left: 56%;
-    }
-
-    .Pline {
-        margin: 5% 25% 5% 25%;
-    }
-
-    p {
-        margin: 5px 25% 5px 25%;
-    }
-}
-
 @media only screen and (max-width: 600px) {
+    .back {
+        padding: 5px 5% 5px 5%;
+    }
+
     .image_size img {
-        width: 70%;
+        width: 90%;
     }
 
     .button_style_in {
@@ -94,31 +109,42 @@
     }
 
     .Pline {
-        margin: 7% 15% 7% 15%;
+        margin: 7% 5% 7% 5%;
     }
 
     p {
-        margin: 5px 15% 5px 15%;
+        margin: 5px 5% 5px 5%;
     }
+} */
+
+body {
+    height: 100%;
+    margin: 0;
 }
+
 
 /* auto size */
 .image_size img {
     display:block; 
     margin:auto;
+    position: absolute;
+    top: 20%;
 }
 .button_style_in {
-    position: fixed;
+    position: absolute;            /* 修改 */
+    bottom: 10%;
+    right: 10%;
     float: right;
     padding: 10px;
     border-radius: 0.7rem;
     background-color: rgb(16, 26, 57);
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 2.5rem;             /* 修改 */
     font-family: 'Courier New', Courier, monospace;
 }
 
 .Pline {
+    margin-top: 20%;
     padding: 0;
     width: 10%;
     height: 5px;
@@ -126,11 +152,19 @@
 }
 
 p {
+    margin-top: 6%;            /* 修改 */
+    margin-bottom: 6%;            /* 修改 */
     padding: 0.3rem;
-    font-size: 1.3rem;
+    font-size: 2.5rem;
 }
 
 /* auto size */
+
+
+.Pline_out {
+    margin: auto;
+}
+
 
 .back {
     padding: 0% 10% 0% 10%;
@@ -142,5 +176,8 @@ a {
 }
 
 .text_class {
-    margin: 10px 60px 10px 60px;
+    margin: 10px 0px 10px 0px;
+    position: absolute;            /* 修改 */
+    top: 45%;
+    width: 80%;
 }
