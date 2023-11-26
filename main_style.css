@@ -181,3 +181,23 @@ a {
     top: 45%;
     width: 80%;
 }
+
+
+
+
+.player {
+    position: absolute;            /* 修改 */
+    bottom: 12%;
+    float: left;
+}
+
+.player img {
+    width: 10%;
+    background-color: white;
+    padding: 5%;
+    border-radius: 100%;
+}
+
+/* .player img:hover {
+    background-color: rgb(204, 204, 204);
+} */

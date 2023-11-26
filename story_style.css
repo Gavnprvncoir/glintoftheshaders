@@ -94,3 +94,20 @@ body {
         right: 0%;
     }
 } */
+
+
+
+.top_style {
+    position: fixed;
+    bottom: 150px;
+    right: -250px;
+
+    z-index: 999;
+}
+
+.top_style img {
+    background-color: white;
+    padding: 5%;
+    border-radius: 100%;
+    width: 15%;
+}
