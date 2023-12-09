@@ -4,11 +4,11 @@
     }
 } */
 
-@media only screen and (Min-width: 768px){
+/* @media only screen and (Min-width: 768px){
     .container, .container-sm {
         max-width: 540px;
     }
-}
+} */
 
 html {
     height: 100%;
