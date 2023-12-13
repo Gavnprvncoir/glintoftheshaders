@@ -75,7 +75,7 @@
         <link href = "main_style.css" rel = "stylesheet">
     </head>
 
-    <body onload = "onloadpage()" class = "container d-flex justify-content-around flex-column mb-3" style = "height: 100%;background-image: url(img/image2.jpg);">
+    <body onload = "onloadpage()" id = "heightcontrol" class = "container d-flex justify-content-around flex-column mb-3" style = "height: 100%;background-image: url(img/image2.jpg);">
 
         <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
@@ -86,20 +86,6 @@
                 <span id = "moon1" class = "lead">月亮阿   月亮</span>
                 <span id = "moon3" class = "lead">愛情學分不是必修</span>
                 <span id = "moon4" class = "lead">但我真的好想修...</span>
-            </div>
-        </div>
-
-        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-
-        <div class = "fstory" id = "wbottom">
-            <div class = "p-2">
-                <figure class = "figure">
-                    <img src = "f_story/f1-01_0.png" class = "figure-img img-fluid rounded" alt = "...">
-
-                    <img src = "f_story/f1-02_0.png" class = "figure-img img-fluid rounded" alt = "...">
-
-                    <img src = "f_story/f1-03_0.png" class = "figure-img img-fluid rounded" alt = "...">
-                </figure>
             </div>
         </div>
 
@@ -118,6 +104,22 @@
                 <div class = "col"></div>
             </div>
         </div>
+
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+        <div style = "display: none;" class = "fstory" id = "wbottom">
+            <div class = "p-2">
+                <figure class = "figure">
+                    <img src = "f_story/f1-01_0.png" class = "figure-img img-fluid rounded" alt = "...">
+
+                    <img src = "f_story/f1-02_0.png" class = "figure-img img-fluid rounded" alt = "...">
+
+                    <img src = "f_story/f1-03_0.png" class = "figure-img img-fluid rounded" alt = "...">
+                </figure>
+            </div>
+        </div>
+
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
         <div id = "dispalynone2" class="p-2 flex-fill">
             <div class="row align-items-center">
@@ -227,6 +229,21 @@
                     document.getElementById("dispalynone");
                 }
             }
+
+            const wbottom = document.getElementById("wbottom");
+
+            const heightcontrol = document.getElementById("heightcontrol");
+
+            function fstorydelay()
+            {
+                wbottom.style.display = "block";
+                heightcontrol.style.height = "auto";
+
+                document.getElementById("dispalynone1").style.display = "block";
+                document.getElementById("dispalynone2").style.display = "block";
+                document.getElementById("dispalynone3").style.display = "block";
+            }
+            setTimeout(fstorydelay, 4000);
 
             function onloadpage()
             {
