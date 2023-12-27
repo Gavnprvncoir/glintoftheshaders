@@ -75,22 +75,30 @@
         <link href = "main_style.css" rel = "stylesheet">
     </head>
 
-    <body onload = "onloadpage()" id = "heightcontrol" class = "container d-flex justify-content-around flex-column mb-3" style = "height: 100%;background-image: url(img/image2.jpg);">
+    <body onload = "onloadpage()" id = "heightcontrol" style = "height: 100%;background-image: url(img/image2.jpg);">
 
         <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
+
         <!-- <div sytle = "height: 100%;" id = "frist_page"> -->
 
-        <div class = "show_text">
+        <!-- <div class = "show_text">
             <div class = "text_background">
                 <span id = "moon1" class = "lead">月亮阿   月亮</span>
-                <span id = "moon3" class = "lead">愛情學分不是必修</span>
-                <span id = "moon4" class = "lead">但我真的好想修...</span>
+                <span id = "moon2" class = "lead">愛情學分不是必修</span>
+                <span id = "moon3" class = "lead">但我真的好想修...</span>
             </div>
+        </div> -->
+
+        <div class = "text_background show_text">
+            <p id = "moon1" class = "lead">月亮阿   月亮</p>
+            <p id = "moon2" class = "lead">愛情學分不是必修</p>
+            <p id = "moon3" class = "lead">但我真的好想修...</p>
         </div>
 
         <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
+        <diV class = "container d-flex justify-content-around flex-column mb-3">
         <div id = "dispalynone1" class = "p-2 flex-fill">
             <div class = "row align-items-center">
                 <div class = "col">
@@ -107,7 +115,8 @@
 
         <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
-        <div style = "display: none;" class = "fstory" id = "wbottom">
+        <!-- <div style = "display: none;" class = "fstory" id = "wbottom"> -->
+        <div class = "fstory" id = "wbottom">
             <div class = "p-2">
                 <figure class = "figure">
                     <img src = "f_story/f1-01_0.png" class = "figure-img img-fluid rounded" alt = "...">
@@ -137,7 +146,7 @@
             <div class="row align-items-center" style="height: 30rem;">
                 <div class="col"></div>
                 
-                <div class="col" style="height: 100%;">
+                <div id = "story1" class="col" style="height: 100%;">
                     <div class="d-grid gap-2" style="height: 100%;">
                         <button style="border-radius: 100rem;width: 5rem" onclick="button_js" class="btn btn-primary" type="button">
                             <a style="text-decoration: none;color: white;" href="story1.html">
@@ -161,7 +170,7 @@
                     </div>
                 </div>
 
-                <div class="col" style="height: 100%;">
+                <div id = "story2" class="col" style="height: 100%;">
                     <div class="d-grid gap-2" style="height: 100%;">
                         <button style="border-radius: 100rem;width: 5rem" onclick="button_js" class="btn btn-primary" type="button">
                             <a style="text-decoration: none;color: white;" href="#">
@@ -185,7 +194,7 @@
                     </div>
                 </div>
 
-                <div class="col" style="height: 100%;">
+                <div id = "story3" class="col" style="height: 100%;">
                     <div class="d-grid gap-2" style="height: 100%;">
                         <button style="border-radius: 100rem;width: 5rem" onclick="button_js" class="btn btn-primary" type="button">
                             <a style="text-decoration: none;color: white;" href="#">
@@ -214,44 +223,57 @@
         </div>
 
         <div id = "dispalynone" class="p-2 flex-fill"></div>
+        </diV>
 
         <audio controls autoplay loop style="display: none;" src="music/開頭2.mp3"></audio>
         
         <script>
-            window.onscroll = function() {scrolltobottom()};
+            // window.onscroll = function() {scrolltobottom()};
 
-            function scrolltobottom()
-            {
-                if (document.documentElement.scrollHeight > 950)
-                {
-                    document.getElementById("dispalynone");
-
-                    document.getElementById("dispalynone");
-                }
+            // function scrolltobottom()
+            // {
+            //     if (document.body.scrollTop > 10000 || document.documentElement.scrollTop > 10000) {
+            //         document.getElementById("displaynone2").className = "move-top";
+            //         document.getElementById("displaynone3").className = "move-top";
+                    
+            //         // document.getElementById("dispalynone2").style.display="block";
+            //         // document.getElementById("dispalynone3").style.display="block";
+            //     }
+            // }
+            const windowHeight = window.innerHeight;
+            if (window.scrollY > windowHeight-10) {
+                document.getElementById("displaynone3").className = "move-top";
             }
+
+
 
             const wbottom = document.getElementById("wbottom");
 
             const heightcontrol = document.getElementById("heightcontrol");
 
-            function fstorydelay()
-            {
-                wbottom.style.display = "block";
-                heightcontrol.style.height = "auto";
+            // function fstorydelay()
+            // {
+            //     wbottom.style.display = "block";
+            //     heightcontrol.style.height = "auto";
 
-                document.getElementById("dispalynone1").style.display = "block";
-                document.getElementById("dispalynone2").style.display = "block";
-                document.getElementById("dispalynone3").style.display = "block";
-            }
-            setTimeout(fstorydelay, 6000);
+            //     document.getElementById("dispalynone1").style.display = "block";
+            //     document.getElementById("dispalynone2").style.display = "block";
+            //     document.getElementById("dispalynone3").style.display = "block";
+
+            //     document.getElementById("back_anime").className = "anime1";
+            // }   
+            // setTimeout(fstorydelay, 6000);
 
             function onloadpage()
             {
-                document.getElementById("dispalynone1").style.display = "none";
-                document.getElementById("dispalynone2").style.display = "none";
-                document.getElementById("dispalynone3").style.display = "none";
+            //     document.getElementById("dispalynone1").style.display = "none";
+            //     document.getElementById("dispalynone2").style.display = "none";
+            //     document.getElementById("dispalynone3").style.display = "none";
 
-                document.getElementById("wbottom");
+                var screenHeight = screen.height;
+                var windowHeight = window.innerHeight;
+                
+                heightcontrol.style.height = "auto";
             }
 
             function button_js()

@@ -14,14 +14,18 @@
         <link href = "main_style.css" rel = "stylesheet">
     </head>
 
-    <body class = "container d-flex justify-content-around flex-column mb-3" style = "height: 100%;background-image: url(img/image2.jpg);">
+    <body onload = "onloadpage()" class = "container d-flex justify-content-around flex-column mb-3" style = "height: 100%;background-image: url(img/image2.jpg);">
+
+        <!-- <div class="test1">
+
+        </div> -->
 
         <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
         <!-- <div sytle = "height: 100%;" id = "frist_page"> -->
         <div class="p-2 flex-fill"></div>
 
-        <div class="p-2">
+        <div id="anime1" class="test_animate p-2">
             <div class="row align-items-center">
                 <div class="col">
                     <div class="line">
@@ -39,7 +43,7 @@
             </div>
         </div>
 
-        <div class="p-2">
+        <div id="anime2" class="test_animate p-2">
             <div class="row align-items-center">
                 <figure class="figure">
                     <img src="img/image.png" class="figure-img img-fluid rounded" alt="...">
@@ -49,15 +53,15 @@
 
         <div class="p-2 flex-fill">
             <div class="row align-items-center">
-                <p class="lead">
+                <p id="anime3" class="test_animate lead">
                     讓月光為陰影上色
                 </p>
 
-                <p class="lead">
+                <p id="anime4" class="test_animate lead">
                     探索名為愛的漩渦
                 </p>
 
-                <p class="lead">
+                <p id="anime5" class="test_animate lead">
                     如果有天，你能夠體驗另一個人的愛情故事，你會做出什麼選擇
                 </p>
             </div>
@@ -65,7 +69,7 @@
 
         <div class="p-2 flex-fill"></div>
 
-        <div class="p-2">
+        <div id="anime6" class="test_animate p-2">
             <div class="row align-items-center">
                 <div class="col"></div>
 
@@ -135,7 +139,7 @@
             </div>
         </div> -->
         
-        <audio controls autoplay loop style="display: none;" src="music/開頭2.mp3"></audio>
+        <!-- <audio controls autoplay loop style="display: none;" id="audioplayer" src="music/開頭2.mp3"></audio> -->
         
         <script>
             function button_js()
@@ -143,6 +147,14 @@
                 document.getElementById("frist_page").style.display("none");
 
                 document.getElementById("frist_page");
+            }
+            
+
+
+            function onloadpage()
+            {
+                var audio = new Audio('music/開頭2.mp3');
+                audio.play();
             }
         </script>
     </body>

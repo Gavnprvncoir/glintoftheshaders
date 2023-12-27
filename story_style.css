@@ -111,3 +111,9 @@ body {
     border-radius: 100%;
     width: 15%;
 }
+
+
+
+#text1 {
+    top: -100%;
+}
