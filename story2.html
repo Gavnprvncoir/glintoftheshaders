@@ -15,6 +15,9 @@
         <link href = "main_style.css" rel = "stylesheet">
         <link href = "story_style.css" rel = "stylesheet">
 
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
         <style>
             dialog{
                 z-index: 1;
@@ -35,7 +38,7 @@
         </style>
     </head>
 
-    <body class = "container d-flex justify-content-around flex-column mb-3" style = "/*height: 100%;*/background-image: url(img/image2.jpg);">
+    <body class = "container d-flex justify-content-around flex-column mb-3" style = "background-image: url(img/image2.jpg);">
         <dialog id="dialog_show" open>
             <span>允許音樂撥放！</span>
 
@@ -62,8 +65,8 @@
                 <img src="story1/漫畫編排1、2_工作區域 1.png" class="figure-img img-fluid rounded" alt="...">
             </figure>
 
-            <figure class="figure">
-                <img src="story1/漫畫編排1、2-02.png" class="figure-img img-fluid rounded" alt="...">
+            <figure style="margin-bottom: 0;" class="figure">
+                <img src="story1/漫畫編排1、2-02.png" style="margin-bottom: 0;" class="figure-img img-fluid rounded" alt="...">
             </figure>
             
             <figure class="figure">
@@ -88,8 +91,8 @@
                 <img src="story1/第一次上傳12-10/戀愛期-10.png" class="figure-img img-fluid rounded" alt="...">
             </figure>
             
-            <figure class="figure">
-                <img src="story1/第一次上傳12-10/戀愛期-12.png" class="figure-img img-fluid rounded" alt="...">
+            <figure style="margin-bottom: 0;" class="figure">
+                <img src="story1/第一次上傳12-10/戀愛期-12.png" style="margin-bottom: 0;" class="figure-img img-fluid rounded" alt="...">
             </figure>
 
             <figure class="figure">
@@ -195,13 +198,13 @@
 
             <!-- 並排 -->
             <div class="row">
-                <div class="col">
+                <div class="col" data-aos="fade-up" data-aos-duration="1000">
                     <figure class="figure">
                         <img src="story1/第二次上傳12-12/紛爭1/紛爭-08-01.png" class="figure-img img-fluid rounded" alt="...">
                     </figure>
                 </div>
 
-                <div class="col">
+                <div class="col" data-aos="fade-down" data-aos-duration="1200">
                     <figure class="figure">
                         <img src="story1/第二次上傳12-12/紛爭1/紛爭-08-02.png" class="figure-img img-fluid rounded" alt="...">
                     </figure>
@@ -289,8 +292,8 @@
 
             <!-- ------------------------- -->
 
-            <figure style="position: relative" class="figure">
-                <img src="story1/第二次上傳12-12/分手3/6漸+分手10-01.png" class="figure-img img-fluid rounded" alt="...">
+            <figure style="margin-bottom: 0px;position: relative" class="figure">
+                <img src="story1/第二次上傳12-12/分手3/6漸+分手10-01.png" style="margin-bottom: 0px;" class="figure-img img-fluid rounded" alt="...">
             </figure>
 
             <div style="background-color: black;">
@@ -322,9 +325,11 @@
                     <img src="story1/第二次上傳12-12/分手3/分手10-08.png" class="figure-img img-fluid rounded" alt="...">
                 </figure>
     
-                <figure style="position: relative" class="figure">
-                    <img src="story1/第二次上傳12-12/分手3/分手10-09.png" class="figure-img img-fluid rounded" alt="...">
-                </figure>
+                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                    <figure style="position: relative" class="figure">
+                        <img src="story1/第二次上傳12-12/分手3/分手10-09.png" class="figure-img img-fluid rounded" alt="...">
+                    </figure>
+                </div>
     
                 <figure style="position: relative" class="figure">
                     <img src="story1/第二次上傳12-12/分手3/分手11-01.png" class="figure-img img-fluid rounded" alt="...">
@@ -458,6 +463,8 @@
         <audio id="audioplayer" controls autoplay loop style="display: none;" src="music/居家1.mp3"></audio>
 
         <script>
+            AOS.init();
+
             document.getElementById("send1").style.display = "none";
 
 
