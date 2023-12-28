@@ -13,10 +13,31 @@
         <!--  -->
         <link href = "page_style.css" rel = "stylesheet">
         <link href = "main_style.css" rel = "stylesheet">
+
+        <style>
+            dialog{
+                z-index: 1;
+                top: 5%;
+                border: none;
+                box-shadow: 0 2px 6px #ccc;
+                border-radius: 10px;
+            }
+            dialog::backdrop {
+                background-color: rgba(0, 0, 0, 0.1);   
+            }
+            button{
+                border: none;
+                box-shadow: 0 2px 6px #bdbdbd;
+            }
+        </style>
     </head>
 
     <body onload = "onloadpage()" id = "heightcontrol" style = "height: 100%;background-image: url(img/image2.jpg);">
+        <dialog id="dialog_show" open>
+            <span>允許音樂撥放！</span>
 
+            <button onclick="button2_js()">play</button>
+        </dialog>
         <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 
@@ -178,7 +199,7 @@
         <div id = "dispalynone" class="p-2 flex-fill"></div>
         </diV>
 
-        <audio controls autoplay loop style="display: none;" src="music/開頭2.mp3"></audio>
+        <audio id="audioplayer" controls autoplay loop style="display: none;" src="music/開頭2.mp3"></audio>
         
         <script>
             // window.onscroll = function() {scrolltobottom()};
@@ -234,6 +255,14 @@
                 document.getElementById("frist_page").style.display = "none";
 
                 document.getElementById("frist_page");
+            }
+            function button2_js()
+            {
+                var audioplayer = document.getElementById("audioplayer");
+
+                document.getElementById("dialog_show").style.display="none";
+
+                audioplayer.play();
             }
         </script>
     </body>

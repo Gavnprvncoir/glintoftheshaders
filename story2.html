@@ -14,13 +14,31 @@
         <link href = "page_style.css" rel = "stylesheet">
         <link href = "main_style.css" rel = "stylesheet">
         <link href = "story_style.css" rel = "stylesheet">
-        <style>
 
+        <style>
+            dialog{
+                z-index: 1;
+                top: 5%;
+                border: none;
+                box-shadow: 0 2px 6px #ccc;
+                border-radius: 10px;
+            }
+            dialog::backdrop {
+                background-color: rgba(0, 0, 0, 0.1);   
+            }
+            button{
+                border: none;
+                box-shadow: 0 2px 6px #bdbdbd;
+            }
         </style>
     </head>
 
     <body class = "container d-flex justify-content-around flex-column mb-3" style = "/*height: 100%;*/background-image: url(img/image2.jpg);">
+        <dialog id="dialog_show" open>
+            <span>允許音樂撥放！</span>
 
+            <button onclick="button2_js()">play</button>
+        </dialog>
         <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
         <div class="p-2 flex-fill">
@@ -174,18 +192,20 @@
             </figure>
 
             <!-- 並排 -->
-            <figure class="figure">
-                <img src="story1/第二次上傳12-12/紛爭1/紛爭-08-01.png" class="figure-img img-fluid rounded" alt="...">
-            </figure>
+            <div class="row">
+                <div class="col">
+                    <figure class="figure">
+                        <img src="story1/第二次上傳12-12/紛爭1/紛爭-08-01.png" class="figure-img img-fluid rounded" alt="...">
+                    </figure>
+                </div>
 
-            <figure class="figure">
-                <img src="story1/第二次上傳12-12/紛爭1/紛爭-08-02.png" class="figure-img img-fluid rounded" alt="...">
-            </figure>
+                <div class="col">
+                    <figure class="figure">
+                        <img src="story1/第二次上傳12-12/紛爭1/紛爭-08-02.png" class="figure-img img-fluid rounded" alt="...">
+                    </figure>
+                </div>
+            </div>
             <!-- 並排 -->
-
-            <figure class="figure">
-                <img src="story1/第二次上傳12-12/紛爭1/紛爭-08-02.png" class="figure-img img-fluid rounded" alt="...">
-            </figure>
 
             <figure class="figure">
                 <img src="story1/第二次上傳12-12/紛爭1/紛爭-08-03.png" class="figure-img img-fluid rounded" alt="...">
@@ -419,7 +439,7 @@
             </div>   
         </div>
 
-        <audio controls autoplay loop style="display: none;" src="music/居家1.mp3"></audio>
+        <audio id="audioplayer" controls autoplay loop style="display: none;" src="music/居家1.mp3"></audio>
 
         <script>
             document.getElementById("send1").style.display = "none";
@@ -433,6 +453,14 @@
 
                 // document.getElementById("send1").className = "storyend1";
 
+            }
+            function button2_js()
+            {
+                var audioplayer = document.getElementById("audioplayer");
+
+                document.getElementById("dialog_show").style.display="none";
+
+                audioplayer.play();
             }
         </script>
     </body>
